@@ -1,0 +1,187 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: #fff;
+	font-family: 'Flamenco', cursive;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../images/bg1.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.clearfix:after{
+	content: '';
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.logo{
+	height: 50px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+.main-nav{
+	float: right;
+	margin-top: 40px;
+}
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+.main-nav li a{
+	padding: 5px 0;
+	color: #fff;
+	text-decoration: none;
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+.main-nav li a:hover{
+	border-bottom: 2px solid #00923f;
+}
+.nav-icon{
+	display: none;
+}
+#menuIcon{
+	height: 30px;
+}
+.main-body{
+	width: 1180px;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+h1{
+	color: #fff;
+	font-size: 240%;
+	font-weight: lighter;
+	word-spacing: 4px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.anim{
+	animation: animate 2s infinite;
+}
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s,color 0.1s;
+}
+.btn-left{
+	background-color: transparent;
+	margin-right: 15px;
+	color: #00923f;
+	border: 1px solid #00923f; 
+}
+.btn-left:hover{
+	color: #fff;
+	font-weight: bolder;
+	background-color: #00923f;
+	text-shadow: 3px 3px 4px #000;
+	border: 1px solid #fff;
+}
+.btn-right{
+	background-color: transparent;
+	color: #da251e;
+	border: 0.5px solid #da251e; 
+}
+.btn-right:hover{
+	color: #fff;
+	font-weight: bolder;
+	background-color: #da251e;
+	text-shadow: 3px 3px 4px #000;
+	border: 0.5px solid #fff;
+}
+
+.waveTop{
+	position: absolute;
+	/*top: 56px;*/
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 60px;
+	background:url(../images/wave1.png);
+	animation: wave 4s linear infinite;
+	opacity: 0.6;
+	bottom: 0;
+}
+.waveTop:after{
+	position: absolute;
+	left: 0;
+	content: '';
+	z-index: 10;
+	width: 100%;
+	height: 60px;
+	background: url(../images/wave1.png);	
+	opacity: 0.6;
+	animation-delay: -5s;
+	animation: wave 8s linear infinite;
+}
+.waveTop:before{
+	position: absolute;
+	left: 0;
+	content: '';
+	z-index: 10;
+	width: 100%;
+	height: 60px;
+	background: url(../images/wave1.png);	
+	opacity: 0.6;
+	animation-delay: -5s;
+	animation: waveRev 8s linear infinite;
+}
+
+/*All Animations*/
+@keyframes animate{
+	0%{
+		color: #fff;
+	}
+	25%{
+		color: #00923f;
+	}
+	50%{
+		color: #fff;
+	}
+	75%{
+		color: #da251e;
+	}
+	100%{
+		color: #fff;
+	}
+}
+@keyframes wave{
+	0%{
+		background-position: 0;
+	}
+	100%{
+		background-position:1360px;
+	}
+}
+@keyframes waveRev{
+	0%{
+		background-position: 1360px;
+	}
+	100%{
+		background-position: 0;
+	}
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Biswas Food</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header id="header" class="">
+		<nav>
+			<div class="row clearfix">
+				<img src="images/Logo.png" alt="logo" class="logo">
+				<ul class="main-nav animated slideInDown" id="mainNav"  >
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Guide</a></li>
+					<li><a href="#">Order Online</a></li>
+					<li><a href="#">Veg Menu</a></li>
+					<li><a href="#">Non-Veg Menu</a></li>
+					<li><a href="#">Sign Up</a></li>
+				</ul>
+				<a href="#" class="nav-icon" onclick="viewIcon()">					
+					<img src="images/menu.png" alt="icon" ><!-- <i class="fa fa-bars" id="menuIcon"></i> -->
+				</a>
+			</div>
+		</nav>
+		<div class="main-body">
+			<h1>
+				<span class="anim">Biswas Foods </span>Welcomes You...<br>
+				Extreme kinds of Fusion Foods online
+			</h1>
+			<a href="#" class="btn btn-left">Veg Menu</a>
+			<a href="#" class="btn btn-right">Non-Veg Menu</a>
+		</div>
+		<div class="waveTop"></div>		
+	</header><!-- /header -->
+	<script type="text/javascript">
+		function viewIcon() {
+			var x = document.getElementById('mainNav');
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} 
+			else{
+				x.style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
