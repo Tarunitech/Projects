@@ -3,6 +3,8 @@
 	.main-body,.row{width: 100%;padding: 0 3%;}
 	.main-nav{margin-top: 35px;}
 	.main-nav li a{font-size: 95%;}
+	.section_1{padding: 40px;}
+	.card{width: 280px !important;}
 }
 @media only screen and (max-width: 998px){
 	h1{font-size: 180%;}
@@ -10,13 +12,16 @@
 	.main-nav{margin-top: 30px;}
 	.main-nav li{margin-left: 20px;}
 	.main-nav li a{font-size: 85%;}
+	.section_1{padding: 40px 20px !important;}
+	.card{width: 220px !important;padding: 30px !important;}
 }
 @media only screen and (max-width: 768px){
 	h1{font-size: 150%;}
 	.nav-icon{display: inline-block;color: #fff;float: right;margin-top: 25px;}
 	.main-nav {display: none;float: left;}
 	.main-nav li{margin-left: 20px;display: block;margin-top: 10px;}
-	/*.main-nav li a{font-size: 85%;display: block;margin-top: 10px;}*/
+	.container{display: inline-block !important;margin-top: 150px !important;margin-left: 25px!important;margin-right: 25px!important;}
+	.card{width: 100% !important;padding: 40px !important;margin-bottom: 50px !important;}
 }
 @media only screen and (max-width: 600px){
 	h1{font-size: 120%;}

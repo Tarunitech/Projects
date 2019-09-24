@@ -1,0 +1,35 @@
+
+/*All Animations*/
+@keyframes animate{
+	0%{
+		color: #fff;
+	}
+	25%{
+		color: #00923f;
+	}
+	50%{
+		color: #fff;
+	}
+	75%{
+		color: #da251e;
+	}
+	100%{
+		color: #fff;
+	}
+}
+@keyframes wave{
+	0%{
+		background-position: 0;
+	}
+	100%{
+		background-position:1360px;
+	}
+}
+@keyframes waveRev{
+	0%{
+		background-position: 1360px;
+	}
+	100%{
+		background-position: 0;
+	}
+}
